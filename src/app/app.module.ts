@@ -6,11 +6,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AuthorListComponent } from './authors/author-list.component'
+import { SubjectListComponent } from './subjects/subject-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthorListComponent
+    AuthorListComponent,
+    SubjectListComponent
   ],
   imports: [
     BrowserModule,
