@@ -10,9 +10,9 @@
     <section id="body" class="container">
 
         <div class="row">
-            <ieindex-authors></ieindex-authors>
+            <ieindex-authors [isUserInAdminMode]='isUserInAdminMode'></ieindex-authors>
 
-            <ieindex-articles></ieindex-articles>
+            <ieindex-articles [isUserInAdminMode]='isUserInAdminMode'></ieindex-articles>
         </div>
 
     </section>

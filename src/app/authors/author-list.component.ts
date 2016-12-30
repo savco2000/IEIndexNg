@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { IAuthor } from './author'
 
 @Component({
@@ -7,6 +7,7 @@ import { IAuthor } from './author'
 })
 
 export class AuthorListComponent {
+    @Input() isUserInAdminMode: boolean;
     authors: IAuthor[] = [
         {
             "id": 1,

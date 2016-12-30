@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { IArticle } from './article'
 
 @Component({
@@ -7,6 +7,7 @@ import { IArticle } from './article'
 })
 
 export class ArticleListComponent {
+     @Input() isUserInAdminMode: boolean;
     articles: IArticle[] = [{
         "id": 1,
         "title": "All-One Comprehensive Immigration Reform",
