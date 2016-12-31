@@ -1,3 +1,5 @@
+import { IAuthor } from 'app/authors/author'
+
 export interface IArticle {
     id: number,
     title: string,
@@ -5,5 +7,6 @@ export interface IArticle {
     issue: string,
     publicationYear: number,
     isSupplement: string,
-    hyperlink: string
+    hyperlink: string,
+    authors: IAuthor[]
 }
