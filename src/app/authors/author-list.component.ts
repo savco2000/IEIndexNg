@@ -7,9 +7,9 @@ import { IAuthor } from './author'
 })
 
 export class AuthorListComponent {
-    @Input() isUserInAdminMode: boolean;    
+    @Input() isUserInAdminMode: boolean;        
 
-    authors: IAuthor[] = [
+   authors: IAuthor[] = [
         {
             "id": 1,
             "firstName": "Stuart",

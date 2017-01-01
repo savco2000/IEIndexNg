@@ -1,6 +1,6 @@
 <section id="articles" class="col-md-7 col-sm-7">
   
-    <div class="panel panel-default panel-table">
+    <div class="panel panel-default panel-table" *ngIf='articlesExist || isUserInAdminMode'>
         <div class="panel-heading">
             <div class="row">
                 <div class="col col-xs-6">
