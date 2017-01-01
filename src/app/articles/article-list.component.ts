@@ -266,4 +266,10 @@ export class ArticleListComponent {
             }
         ]
     }];
+
+    articlesExist: boolean =
+        typeof this.articles != "undefined"
+        && this.articles != null
+        && this.articles.length != null
+        && this.articles.length > 0;
 }

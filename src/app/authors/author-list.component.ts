@@ -7,7 +7,7 @@ import { IAuthor } from './author'
 })
 
 export class AuthorListComponent {
-    @Input() isUserInAdminMode: boolean;
+    @Input() isUserInAdminMode: boolean;    
 
     authors: IAuthor[] = [
         {
@@ -276,5 +276,11 @@ export class AuthorListComponent {
                 }
             ]
         }
-    ];
+    ]; 
+
+    authorsExist: boolean =
+        typeof this.authors != "undefined"
+        && this.authors != null
+        && this.authors.length != null
+        && this.authors.length > 0;
 }
