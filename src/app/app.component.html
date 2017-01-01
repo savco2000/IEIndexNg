@@ -1,1 +1,29 @@
-<h3>{{title}}</h3>
+<div id="page">
+    <header class="container">
+        <div id="menu" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">IEIndex <span class="glyphicon glyphicon-home"></span></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="body" class="container">
+        <div class="row">
+            <ieindex-authors [isUserInAdminMode]='isUserInAdminMode'>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%"></div>
+                </div>
+            </ieindex-authors>
+
+            <ieindex-articles [isUserInAdminMode]='isUserInAdminMode'>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%"></div>
+                </div>
+            </ieindex-articles>
+        </div>
+    </section>
+    <hr />
+    <footer class="container">
+        <p>&copy; 2016 Savcosoft Ltd.</p>
+    </footer>
+</div>
