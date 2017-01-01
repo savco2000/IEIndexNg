@@ -1,8 +1,6 @@
 <section id="authors" class="col-md-5 col-sm-5">
-    <div class="alert alert-warning" *ngIf='!authors || !authors.length'>
-        No authors were found.
-    </div>
-    <div class="panel panel-default panel-table" *ngIf='authors && authors.length'>
+
+    <div class="panel panel-default panel-table">
         <div class="panel-heading">
             <div class="row">
                 <div class="col col-xs-6">
@@ -13,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="table-responsive">
+        <div class="table-responsive" *ngIf='authors && authors.length'>
             <table class="table table-striped table-bordered table-list table-hover clickable">
                 <thead>
                     <tr>
@@ -33,5 +31,9 @@
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <div class="alert alert-warning" *ngIf='!(authors && authors.length)'>
+        No authors were found.
     </div>
 </section>
