@@ -12,3 +12,7 @@ table.clickable tr:hover {
 th {
     text-align: center
 }
+
+.adminColumn {
+    width: 68px;
+}
