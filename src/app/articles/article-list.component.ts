@@ -11,19 +11,24 @@ export class ArticleListComponent implements OnInit {
     @Input() isUserInAdminMode: boolean;
 
     articles: IArticle[];
-    articlesExist: boolean;
+    articlesExist: boolean = true;
+    errorMessage: string;
 
     constructor(private _ieIndexService: IEIndexService) {
 
     }
 
     ngOnInit(): void {
-        this.articles = this._ieIndexService.getArticles();
+        this._ieIndexService.getArticles()
+            .subscribe(articles => {               
+                this.articles = articles
+            }, error => this.errorMessage = <any>error);
 
-        this.articlesExist =
+
+       /* this.articlesExist =
             typeof this.articles != "undefined"
             && this.articles != null
             && this.articles.length != null
-            && this.articles.length > 0;
+            && this.articles.length > 0;*/
     }
 }
