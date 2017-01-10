@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { AuthorListComponent } from './authors/author-list.component'
-import { ArticleListComponent } from './articles/article-list.component'
+import { AuthorListComponent } from './authors/author-list.component';
+import { ArticleListComponent } from './articles/article-list.component';
 
 @NgModule({
   declarations: [

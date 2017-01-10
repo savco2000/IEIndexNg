@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core'
-import { IAuthor } from './author'
+import { Component, Input, OnInit } from '@angular/core';
+import { IAuthor } from './author';
 import { IEIndexService } from 'app/ieindex.service';
 
 @Component({
