@@ -11,7 +11,7 @@ export class ArticleListComponent implements OnInit {
     @Input() isUserInAdminMode: boolean;
 
     articles: IArticle[];
-    articlesExist: boolean = true;
+    articlesExist: boolean;
     errorMessage: string;
 
     constructor(private _ieIndexService: IEIndexService) {
@@ -20,15 +20,15 @@ export class ArticleListComponent implements OnInit {
 
     ngOnInit(): void {
         this._ieIndexService.getArticles()
-            .subscribe(articles => {               
+            .subscribe(articles => {
                 this.articles = articles
             }, error => this.errorMessage = <any>error);
+    }
 
-
-       /* this.articlesExist =
-            typeof this.articles != "undefined"
+    ngAfterContentChecked(): void {
+        this.articlesExist = typeof this.articles != "undefined"
             && this.articles != null
             && this.articles.length != null
-            && this.articles.length > 0;*/
+            && this.articles.length > 0;
     }
 }
