@@ -13,8 +13,7 @@ export class IEIndexService {
 
     private _authorUrl = 'api/authors/authors.json';
     private _articleUrl = 'api/articles/articles.json';
-    test: Observable<IAuthor[]>;
-
+    
     constructor(private _http: Http) { }
 
     getArticles(): Observable<IArticle[]> {
