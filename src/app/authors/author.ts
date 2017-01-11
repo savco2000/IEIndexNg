@@ -1,4 +1,4 @@
-import { IArticle } from 'app/articles/article'
+import { IArticle } from 'app/articles/article';
 
 export interface IAuthor {
     id: number,
