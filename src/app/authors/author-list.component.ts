@@ -10,27 +10,27 @@ import { IEIndexService } from 'app/ieindex.service';
 export class AuthorListComponent implements OnInit {
 
     @Input() isUserInAdminMode: boolean;
+
+    authors: IAuthor[];
     authorsExist: boolean;
     errorMessage: string;
-
-    authors: IAuthor[] = [];
 
     constructor(private _ieIndexService: IEIndexService) {
 
     }
 
     ngOnInit(): void {
-    
+
         this._ieIndexService.getAuthors()
-            .subscribe(authors => {               
+            .subscribe(authors => {
                 this.authors = authors;
             }, error => this.errorMessage = <any>error);
     }
 
-    ngAfterContentChecked(): void {    
-         this.authorsExist = typeof this.authors != "undefined"
-             && this.authors != null
-             && this.authors.length != null
-             && this.authors.length > 0;
+    ngAfterContentChecked(): void {
+        this.authorsExist = typeof this.authors != "undefined"
+            && this.authors != null
+            && this.authors.length != null
+            && this.authors.length > 0;
     }
 }

@@ -8,6 +8,7 @@ import { IEIndexService } from 'app/ieindex.service';
 })
 
 export class ArticleListComponent implements OnInit {
+    
     @Input() isUserInAdminMode: boolean;
 
     articles: IArticle[];
