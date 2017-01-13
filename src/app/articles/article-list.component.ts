@@ -20,13 +20,12 @@ export class ArticleListComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this._ieIndexService.getArticles()
-            .subscribe(articles => {
-                this.articles = articles
-            }, error => this.errorMessage = <any>error);
+       this._ieIndexService.getArticles(); 
     }
 
     ngAfterContentChecked(): void {
+        this.articles = this._ieIndexService.articles;
+
         this.articlesExist = typeof this.articles != "undefined"
             && this.articles != null
             && this.articles.length != null
