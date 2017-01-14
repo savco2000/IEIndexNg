@@ -1,0 +1,29 @@
+[
+    {
+        "id": 4,
+        "title": "Deciphering Ambiguous Regulations",
+        "page": 72,
+        "issue": "March/April",
+        "publicationYear": 2008,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 7,
+                "firstName": "Eric",
+                "middleName": null,
+                "lastName": "Kroetsch",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 8,
+                "firstName": "Alisa",
+                "middleName": null,
+                "lastName": "Eland",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 2,
+        "title": "The Internationalization of U.S. Universities—Are We Making Progress?",
+        "page": 52,
+        "issue": "July/August",
+        "publicationYear": 2010,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 2,
+                "firstName": "Sarah",
+                "middleName": "E.",
+                "lastName": "Dumont",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 3,
+                "firstName": "Robert",
+                "middleName": "A.",
+                "lastName": "Pastor",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

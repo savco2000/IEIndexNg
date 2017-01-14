@@ -1,0 +1,35 @@
+[
+    {
+        "id": 3,
+        "title": "Designing an Interdisciplinary Short-Term Program in China",
+        "page": 65,
+        "issue": "March/April",
+        "publicationYear": 2008,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 4,
+                "firstName": "Jacqueline",
+                "middleName": "S.",
+                "lastName": "McLaughlin",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 5,
+                "firstName": "Nikolaos",
+                "lastName": "Tzafaras",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 6,
+                "firstName": "John",
+                "lastName": "McCollough",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

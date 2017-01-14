@@ -1,0 +1,29 @@
+[
+    {
+        "id": 9,
+        "title": "Instant Connections",
+        "page": 46,
+        "issue": "November/December",
+        "publicationYear": 2009,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 13,
+                "firstName": "Mandy",
+                "middleName": null,
+                "lastName": "Reinig",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 14,
+                "firstName": "Penny",
+                "middleName": null,
+                "lastName": "Schouten",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

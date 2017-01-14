@@ -1,0 +1,40 @@
+[
+    {
+        "id": 5,
+        "title": "Limited Resources, Endless Possibilities",
+        "page": 34,
+        "issue": "March/April",
+        "publicationYear": 2008,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 9,
+                "firstName": "Susan",
+                "middleName": null,
+                "lastName": "Ladika",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Women's Work",
+        "page": 32,
+        "issue": "September/October",
+        "publicationYear": 2009,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 9,
+                "firstName": "Susan",
+                "middleName": null,
+                "lastName": "Ladika",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]
