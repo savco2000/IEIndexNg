@@ -30,7 +30,7 @@ export class AuthorListComponent implements OnInit {
             && this.authors.length > 0;
     }
 
-    getAuthorArticles(id: number): void { 
-        this._ieIndexService.getAuthorArticles(id);        
+    getAuthorArticles(author: IAuthor): void { 
+        this._ieIndexService.getAuthorArticles(author.id);        
     }
 }
