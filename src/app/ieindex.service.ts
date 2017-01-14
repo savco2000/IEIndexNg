@@ -11,8 +11,8 @@ import { IAuthor } from 'app/authors/author';
 @Injectable()
 export class IEIndexService {
 
-    private _authorUrl = 'api/authors/authors.json';
-    private _articleUrl = 'api/articles/articles.json';   
+    private _authorUrl = 'api/authors/authors';
+    private _articleUrl = 'api/articles/articles';   
 
     authors: IAuthor[];
     articles: IArticle[];
@@ -35,7 +35,8 @@ export class IEIndexService {
     }
 
     getAuthorArticles(id: number): void {
-        var url = `api/authors/${id}/articles.json`;
+        //var url = `api/authors/${id}/articles.json`;
+         var url = `api/authors/${id}/articles`;
         this._http.get(url)
             .map((response: Response) => <IArticle[]>response.json())            
             .catch(this.handleError)
