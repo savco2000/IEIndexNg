@@ -1,0 +1,29 @@
+[
+    {
+        "id": 7,
+        "title": "International Students Are an Emerging Market for Study Abroad",
+        "page": 6,
+        "issue": "May/June",
+        "publicationYear": 2010,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 11,
+                "firstName": "Greg",
+                "middleName": null,
+                "lastName": "Grassi",
+                "suffix": null,
+                "articles": []
+            },
+            {
+                "id": 12,
+                "firstName": "Kira",
+                "middleName": null,
+                "lastName": "Espiritu",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

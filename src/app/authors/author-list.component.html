@@ -26,7 +26,7 @@
                             <a class="btn btn-danger btn-xs table-icon"><span class="glyphicon glyphicon-trash"></span></a>
                         </td>
 
-                        <td>{{ author.firstName + ' ' + author.lastName }}</td>
+                        <td (click)="getAuthorArticles(author)">{{ author.firstName + ' ' + author.lastName }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -36,4 +36,5 @@
     <div class="alert alert-warning" *ngIf='!authorsExist'>
         No authors were found.
     </div>
+   
 </section>

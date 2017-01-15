@@ -1,0 +1,59 @@
+[
+    {
+        "id": 6,
+        "title": "At Home on Three Continents",
+        "page": 20,
+        "issue": "March/April",
+        "publicationYear": 2010,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 10,
+                "firstName": "Elaina",
+                "middleName": null,
+                "lastName": "Loveland",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "The First Globals Generation",
+        "page": 20,
+        "issue": "May/June",
+        "publicationYear": 2010,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 10,
+                "firstName": "Elaina",
+                "middleName": null,
+                "lastName": "Loveland",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Championing Global Competence",
+        "page": 12,
+        "issue": "September/October",
+        "publicationYear": 2010,
+        "isSupplement": "No",
+        "hyperlink": "/downloads/article.pdf",
+        "authors": [
+            {
+                "id": 10,
+                "firstName": "Elaina",
+                "middleName": null,
+                "lastName": "Loveland",
+                "suffix": null,
+                "articles": []
+            }
+        ]
+    }
+]

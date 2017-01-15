@@ -15,22 +15,22 @@ export class AuthorListComponent implements OnInit {
     authorsExist: boolean;
     errorMessage: string;
 
-    constructor(private _ieIndexService: IEIndexService) {
+    constructor(private _ieIndexService: IEIndexService) { }
 
-    }
-
-    ngOnInit(): void {
-
-        this._ieIndexService.getAuthors()
-            .subscribe(authors => {
-                this.authors = authors;
-            }, error => this.errorMessage = <any>error);
+    ngOnInit(): void {       
+        this._ieIndexService.getAuthors();        
     }
 
     ngAfterContentChecked(): void {
+        this.authors = this._ieIndexService.authors;
+
         this.authorsExist = typeof this.authors != "undefined"
             && this.authors != null
             && this.authors.length != null
             && this.authors.length > 0;
+    }
+
+    getAuthorArticles(author: IAuthor): void { 
+        this._ieIndexService.getAuthorArticles(author.id);        
     }
 }

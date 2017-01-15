@@ -11,23 +11,36 @@ import { IAuthor } from 'app/authors/author';
 @Injectable()
 export class IEIndexService {
 
-    private _authorUrl = 'api/authors/authors.json';
-    private _articleUrl = 'api/articles/articles.json';
-    
+    private _authorUrl = 'api/authors/authors';
+    private _articleUrl = 'api/articles/articles';   
+
+    authors: IAuthor[];
+    articles: IArticle[];
+    errorMessage: string;
+
     constructor(private _http: Http) { }
 
-    getArticles(): Observable<IArticle[]> {
-        return this._http.get(this._articleUrl)
-            .map((response: Response) => <IArticle[]>response.json())
-            //.do(data => console.log('All: ' + JSON.stringify(data)))
-            .catch(this.handleError);
+    getAuthors(): void {
+        this._http.get(this._authorUrl)
+            .map((response: Response) => <IAuthor[]>response.json())            
+            .catch(this.handleError)
+            .subscribe(authors => this.authors = authors, error => this.errorMessage = <any>error);        
     }
 
-    getAuthors(): Observable<IAuthor[]> {
-        return this._http.get(this._authorUrl)
-            .map((response: Response) => <IAuthor[]>response.json())
-            //.do(data => console.log('All: ' + JSON.stringify(data)))
-            .catch(this.handleError);
+    getArticles(): void {
+        this._http.get(this._articleUrl)
+            .map((response: Response) => <IArticle[]>response.json())            
+            .catch(this.handleError)
+            .subscribe(articles => this.articles = articles, error => this.errorMessage = <any>error);    
+    }
+
+    getAuthorArticles(id: number): void {
+        //var url = `api/authors/${id}/articles.json`;
+         var url = `api/authors/${id}/articles`;
+        this._http.get(url)
+            .map((response: Response) => <IArticle[]>response.json())            
+            .catch(this.handleError)
+            .subscribe(articles => this.articles = articles, error => this.errorMessage = <any>error);    
     }
 
     private handleError(error: Response) {
